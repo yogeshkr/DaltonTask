@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/nameentry', function() 
+{
+    return view('nameentry-form');
+});
+
+Route::post('/combine', 'UserController@index');
